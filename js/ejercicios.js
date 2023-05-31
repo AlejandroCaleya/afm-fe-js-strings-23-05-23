@@ -31,19 +31,32 @@ function ej3() {
     }
 
 function ej4() {
+    // manera larga y complicada de hacerlo
+    // let texto = prompt ('Introduce un texto:');
+    // let contenido= '';
+
+
+    // for (let i = 0; i < texto.length; i++) {
+    //     let letra = texto[i];
+    //         if (letra == "(") { 
+    //             for (let y = i; letra != ")" ; y++) {
+    //                 letra = texto[y];
+    //                 contenido = contenido + letra;
+    //             }
+    //         }
+    //     }
+    //     let palabra = contenido.substring(1, contenido.length - 1);
+    //     alert(palabra);
+
     let texto = prompt ('Introduce un texto:');
+    let posI, posF = '';
     let contenido= '';
-
-
-    for (let i = 0; i < texto.length; i++) {
-        let letra = texto[i];
-            if (letra == "(") { 
-                for (let y = i; letra != ")" ; y++) {
-                    letra = texto[y];
-                    contenido = contenido + letra;
-                }
-            }
-        }
-        let palabra = contenido.substring(1, contenido.length - 1);
-        alert(palabra);
+    if (texto.includes('(') == true) {´
+        posI= texto.indexOf('(');
+        
+        
+        
+        
+        alert('hola')
+    } else {alert('No hay parentesi')};
 }
