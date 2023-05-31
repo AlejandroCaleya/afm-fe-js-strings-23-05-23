@@ -49,14 +49,7 @@ function ej4() {
     //     alert(palabra);
 
     let texto = prompt ('Introduce un texto:');
-    let posI, posF = '';
-    let contenido= '';
-    if (texto.includes('(') == true) {´
-        posI= texto.indexOf('(');
-        
-        
-        
-        
-        alert('hola')
-    } else {alert('No hay parentesi')};
+    
+    let frase= texto.substring(texto.indexOf('(')+1,texto.indexOf('(')-1);
+    alert(frase);
 }
